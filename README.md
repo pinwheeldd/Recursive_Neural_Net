@@ -1,5 +1,5 @@
 
-## Neural Network for Jet Classification
+## Recursive Neural Network for Jet Classification
 
 Pytorch Code implementation based on the paper by G. Louppe, K. Cho, C. Becot and K. Cranmer (arXiv:1702.00748)
 
