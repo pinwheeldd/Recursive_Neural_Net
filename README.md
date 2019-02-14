@@ -31,8 +31,11 @@ Finally there will be 3 pickles for train, validation, and test which are ready 
 ---------------------------------------------------------------
 
 batching.py: Batches the input data for the RecNN
+
 rec_net.py: Network architecture using Pytorch
+
 train_batch.py: Driving code for training and saving the model weights
+
 test_batch.py: Outputs the predicted class of the jets.
 
 
