@@ -148,7 +148,6 @@ def extract(jet, pflow=False): ## extracting all 7 features
 @click.argument("filename_model")
 @click.option("--n_train", default=1200000)
 @click.option("--n_valid", default=400000)
-#@click.option("--simple", is_flag=True, default=False)
 @click.option("--n_features", default=7)
 @click.option("--n_hidden", default=50)
 @click.option("--n_epochs", default=20)
@@ -159,18 +158,8 @@ def extract(jet, pflow=False): ## extracting all 7 features
 os.environ['CUDA_VISIBLE_DEVICES'] = "1" ## create the environment
 
 
-def train(filename_train,
-          filename_valid,
-          filename_model,
-          n_train=1200000,
-          n_valid=400000,
-         # simple=False, 
-          n_features=7,
-          n_hidden=40,
-          n_epochs=18,
-          batch_size=128,
-          step_size=0.005,
-          decay=0.9):
+def train(filename_train,filename_valid,filename_model,n_train=1200000,n_valid=400000,n_features=7,
+                n_hidden=40,n_epochs=18,batch_size=128,step_size=0.005,decay=0.9):
    
     logging.info("Calling with...")
     logging.info("\tfilename_train = %s" % filename_train)
@@ -202,7 +191,7 @@ def train(filename_train,
 
 
 
-    # Preprocessing  # center and scale the data
+    # Preprocessing  # feature scaling
     logging.info("Preprocessing the train data")
     X = [extract(pt_order(rewrite_content(jet))) for jet in X]
     transfer_feature= RobustScaler().fit(np.vstack([jet["content"] for jet in X]))
