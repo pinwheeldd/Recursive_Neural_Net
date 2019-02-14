@@ -16,7 +16,7 @@ Requirements: ROOT(https://root.cern.ch),
               PyROOT(https://root.cern.ch/pyroot), 
               Fastjet(https://github.com/scikit-hep/pyjet)
 
-#### To run:
+To run:
 
 Step1. python read_h5.py
 
@@ -40,7 +40,7 @@ test_batch.py: Outputs the predicted class of the jets.
 
 For training:
 
-Python train_batch.py filename_train filename_valid filename_model
+#### python train_batch.py filename_train filename_valid filename_model
 
 filename_train, filename_valid are saved with .pickle extension, filename_model in .pt extension.
 
