@@ -38,5 +38,12 @@ train_batch.py: Driving code for training and saving the model weights
 
 test_batch.py: Outputs the predicted class of the jets.
 
+For training:
+
+Python train_batch.py filename_train filename_valid filename_model
+
+filename_train, filename_valid are saved with .pickle extension, filename_model in .pt extension.
+
+
 
 
