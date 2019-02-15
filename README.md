@@ -16,7 +16,7 @@ Requirements: ROOT(https://root.cern.ch),
               PyROOT(https://root.cern.ch/pyroot), 
               Fastjet(https://github.com/scikit-hep/pyjet)
 
-To run:
+##### To run:
 
 Step1. python read_h5.py
 
@@ -38,7 +38,7 @@ train_batch.py: Driving code for training and saving the model weights
 
 test_batch.py: Outputs the predicted class of the jets.
 
-For training:
+#### For training:
 
 
 
