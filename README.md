@@ -3,7 +3,9 @@
 
 Pytorch Code implementation based on the paper by G. Louppe, K. Cho, C. Becot and K. Cranmer (arXiv:1702.00748).
 
-The goal is to classify boostd top jets and QCD jets.
+Recent publication arXiv:1902.09914
+
+The goal is to classify boostd top jets (Signal) vs QCD jets (Background) by utilizing jet clustering history.
 
 -------------------------------------------------------
 
